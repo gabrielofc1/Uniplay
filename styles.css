@@ -731,17 +731,30 @@ a {
 
   .hero {
     grid-template-columns: 1fr;
+    justify-items: center;
     width: min(850px, calc(100% - 34px));
     min-height: auto;
     padding-top: 132px;
   }
 
   .hero-copy {
+    display: grid;
+    justify-items: center;
     max-width: none;
+    text-align: center;
   }
 
   .hero-visual {
+    width: min(100%, 760px);
     transform: none;
+  }
+
+  .feature-strip {
+    margin-inline: auto;
+  }
+
+  .hero-cta {
+    justify-content: center;
   }
 
   .benefit-cards {
@@ -783,17 +796,20 @@ a {
   .hero {
     width: calc(100% - 24px);
     padding-top: 106px;
+    gap: 20px;
   }
 
   .hero h1 {
-    font-size: clamp(3rem, 14vw, 4.55rem);
+    font-size: clamp(2.55rem, 12.4vw, 4.1rem);
   }
 
   .hero-description {
+    max-width: 34rem;
     font-size: 1.1rem;
   }
 
   .feature-strip {
+    width: min(100%, 390px);
     gap: 12px;
   }
 
@@ -807,9 +823,10 @@ a {
   }
 
   .hero-cta {
+    width: min(100%, 390px);
     min-height: 70px;
-    padding: 0 22px;
-    font-size: 1.35rem;
+    padding: 0 18px;
+    font-size: clamp(1.1rem, 5.6vw, 1.35rem);
   }
 
   .hero-cta .wa-icon {
@@ -817,8 +834,18 @@ a {
     height: 40px;
   }
 
+  .hero-visual {
+    width: 100%;
+    padding: 22px 0 18px;
+  }
+
+  .tv {
+    width: 100%;
+    padding: 7px;
+  }
+
   .tv-screen {
-    padding: 14px;
+    padding: 10px;
   }
 
   .partner-grid {
@@ -838,8 +865,15 @@ a {
     min-height: 95px;
   }
 
+  .media-rack {
+    width: 100%;
+    margin-left: 0;
+  }
+
   .benefit-cards article {
-    grid-template-columns: 70px 1fr;
-    padding: 20px;
+    grid-template-columns: 58px 1fr;
+    gap: 12px;
+    min-height: 128px;
+    padding: 18px;
   }
 }
