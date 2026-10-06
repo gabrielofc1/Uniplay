@@ -3,126 +3,172 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>StreamPlay | O melhor streaming em um s&oacute; lugar</title>
+    <title>Vendix | Gestao inteligente de negocios</title>
     <meta
       name="description"
-      content="StreamPlay reune acesso a plataformas de streaming em um unico lugar, com qualidade, praticidade e custo-beneficio."
+      content="Painel Vendix para importar planilhas, acompanhar vendas, estoque, alertas, analises e conversar com o Assistente Vendix."
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&family=Montserrat:ital,wght@0,700;0,800;0,900;1,900&display=swap"
-      rel="stylesheet"
-    />
+    <meta name="theme-color" content="#f6fbff" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="site-header" data-reveal>
-      <a class="brand" href="#inicio" aria-label="StreamPlay inicio">
-        <span class="brand-mark" aria-hidden="true"><span></span></span>
-        <span class="brand-copy">
-          <span class="brand-name"><span>STREAM</span><strong>PLAY</strong></span>
-          <span class="brand-tagline">ASSISTA. CURTA. VIVA.</span>
-        </span>
-      </a>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Navegacao principal">
+        <a class="brand" href="#dashboard" data-page-link="dashboard" aria-label="Vendix dashboard">
+          <span class="brand-mark">V</span>
+          <span>Vendix</span>
+        </a>
 
-      <a class="whatsapp-link header-cta" href="https://wa.me/5511970641412?text=Ol%C3%A1%21%20%F0%9F%91%8B%20Vim%20pelo%20site%20da%20%2A%2AStreamPlay%28s%C3%B3cio%20Gabriel%29%2A%2A%20e%20tenho%20interesse%20em%20conhecer%20a%20plataforma.%0AGostaria%20de%20saber%20mais%20sobre%20os%20planos%2C%20valores%20e%20como%20funciona%20a%20ativa%C3%A7%C3%A3o" target="_blank" rel="noreferrer">
-        <span class="wa-icon" aria-hidden="true"></span>
-        Falar pelo WhatsApp
-      </a>
-    </header>
+        <nav class="main-nav">
+          <button class="nav-item is-active" data-page-link="dashboard" type="button"><span class="nav-icon home-icon"></span>Dashboard</button>
+          <button class="nav-item" data-page-link="assistant" type="button"><span class="nav-icon ai-icon"></span>IA Vendix</button>
+          <button class="nav-item" data-page-link="sales" type="button"><span class="nav-icon sales-icon"></span>Vendas</button>
+          <button class="nav-item" data-page-link="products" type="button"><span class="nav-icon box-icon"></span>Produtos</button>
+          <button class="nav-item" data-page-link="inventory" type="button"><span class="nav-icon stock-icon"></span>Estoque</button>
+          <button class="nav-item" data-page-link="alerts" type="button"><span class="nav-icon bell-icon"></span>Alertas</button>
+          <button class="nav-item" data-page-link="analytics" type="button"><span class="nav-icon chart-icon"></span>Analises</button>
+          <button class="nav-item" data-page-link="imports" type="button"><span class="nav-icon upload-icon"></span>Importacao de dados</button>
+          <button class="nav-item" data-page-link="data" type="button"><span class="nav-icon data-icon"></span>Meus dados</button>
+          <button class="nav-item" data-page-link="settings" type="button"><span class="nav-icon settings-icon"></span>Configuracoes</button>
+        </nav>
 
-    <main id="inicio">
-      <section class="hero">
-        <div class="hero-copy">
-          <h1 data-reveal>
-            <span>O Melhor</span>
-            <em>Streaming</em>
-            <span>em um S&oacute; Lugar</span>
-          </h1>
-
-          <p class="hero-description" data-reveal>
-            Acesso a todas as plataformas de streaming, em um &uacute;nico lugar, com qualidade,
-            praticidade e o melhor custo-benef&iacute;cio.
-          </p>
-
-          <div class="feature-strip" aria-label="Destaques da StreamPlay" data-reveal>
-            <article id="filmes">
-              <span class="feature-icon feature-tv" aria-hidden="true"></span>
-              <strong>Todas as<br />Plataformas</strong>
-            </article>
-            <article id="series">
-              <span class="feature-icon feature-play" aria-hidden="true"></span>
-              <strong>Filmes e S&eacute;ries<br />Sem Limites</strong>
-            </article>
-            <article id="kids">
-              <span class="feature-icon feature-shield" aria-hidden="true"></span>
-              <strong>Entrega R&aacute;pida<br />e Segura</strong>
-            </article>
+        <div class="workspace-card">
+          <span class="workspace-icon">P</span>
+          <div>
+            <strong>Pet Shop do Ze</strong>
+            <span>Plano Pro</span>
           </div>
-
-          <a class="whatsapp-link hero-cta" href="https://wa.me/5511970641412?text=Ol%C3%A1%21%20%F0%9F%91%8B%20Vim%20pelo%20site%20da%20%2A%2AStreamPlay%28s%C3%B3cio%20Gabriel%29%2A%2A%20e%20tenho%20interesse%20em%20conhecer%20a%20plataforma.%0AGostaria%20de%20saber%20mais%20sobre%20os%20planos%2C%20valores%20e%20como%20funciona%20a%20ativa%C3%A7%C3%A3o" target="_blank" rel="noreferrer" data-reveal>
-            <span class="wa-icon wa-icon-light" aria-hidden="true"></span>
-            Falar pelo WhatsApp
-          </a>
         </div>
+      </aside>
 
-        <div class="hero-visual" id="animes" aria-label="Mockup de TV com conteudos genericos" data-reveal>
-          <div class="ambient-light"></div>
-          <div class="tv">
-            <div class="tv-screen">
-              <div class="partner-grid" aria-label="Servicos ficticios">
-                <span class="brand-red">CINENIX</span>
-                <span class="brand-cyan">prime video</span>
-                <span class="brand-blue">Magic+</span>
-                <span class="brand-purple">HBO<br />max</span>
-                <span class="brand-white">apple tv+</span>
-                <span class="brand-pink">globoplay</span>
-                <span class="brand-star">STAR+</span>
-                <span class="brand-paramount">Paramount+</span>
-              </div>
+      <main class="main-panel">
+        <header class="topbar">
+          <button class="menu-toggle" type="button" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+          <label class="search-field">
+            <span></span>
+            <input type="search" placeholder="Buscar no Vendix..." />
+          </label>
+          <div class="topbar-actions">
+            <button class="icon-button" type="button" aria-label="Notificacoes"><span class="bell-dot"></span></button>
+            <button class="user-menu" type="button"><span>JS</span><strong>Joao Silva</strong><small>Administrador</small></button>
+          </div>
+        </header>
 
-              <div class="poster-grid" aria-label="Conteudos ficticios em destaque">
-                <article class="poster poster-one"><strong>STRANGE<br />NIGHTS</strong></article>
-                <article class="poster poster-two"><strong>THE LAST<br />CITY</strong></article>
-                <article class="poster poster-three"><strong>AVATAR<br />OCEAN</strong></article>
-                <article class="poster poster-four"><strong>WANDRA</strong></article>
-                <article class="poster poster-five"><strong>TOP SKY<br />MAVERICK</strong></article>
-                <article class="poster poster-six"><strong>BELLA</strong></article>
-                <article class="poster poster-seven"><strong>ONE<br />CREW</strong></article>
-                <article class="poster poster-eight"><strong>THE<br />BOYS</strong></article>
-              </div>
+        <section class="page is-active" id="dashboard" data-page="dashboard">
+          <div class="page-heading compact-heading">
+            <div>
+              <p class="eyebrow">Resumo do negocio</p>
+              <h1>Ola, Joao!</h1>
+              <span>Aqui esta um resumo dos seus dados importados.</span>
+            </div>
+            <div class="period-picker">
+              <span>01/03/2025 - 31/03/2025</span>
+              <select aria-label="Periodo do dashboard"><option>Ultimos 30 dias</option><option>Este mes</option><option>Mes passado</option></select>
             </div>
           </div>
-          <div class="tv-stand"></div>
-          <div class="media-rack" id="esportes"><span></span></div>
-        </div>
-      </section>
 
-      <section class="benefit-cards" id="beneficios" aria-label="Beneficios principais">
-        <article data-reveal>
-          <span class="card-icon card-rocket" aria-hidden="true"></span>
-          <div>
-            <h2>Ativa&ccedil;&atilde;o<br />Imediata</h2>
-            <p>Voc&ecirc; recebe tudo pronto para usar</p>
+          <div class="kpi-grid">
+            <article class="metric-card"><span>Faturamento</span><strong>R$ 42.580,00</strong><small class="positive">+ 12,9% vs. mes anterior</small></article>
+            <article class="metric-card"><span>Vendas</span><strong>1.248</strong><small class="positive">+ 8,3% vs. mes anterior</small></article>
+            <article class="metric-card"><span>Ticket medio</span><strong>R$ 34,12</strong><small class="positive">+ 4,7% vs. mes anterior</small></article>
+            <article class="metric-card"><span>Produtos ativos</span><strong>892</strong><small class="positive">+ 2,1% vs. mes anterior</small></article>
           </div>
-        </article>
-        <article data-reveal>
-          <span class="card-icon card-device" aria-hidden="true"></span>
-          <div>
-            <h2>Funciona em<br />Todos os Dispositivos</h2>
-            <p>TV, Celular, Tablet e Computador</p>
+
+          <div class="dashboard-grid">
+            <article class="panel chart-panel">
+              <div class="panel-title"><div><h2>Faturamento</h2><span>Serie diaria</span></div></div>
+              <div class="line-chart" aria-label="Grafico de faturamento">
+                <svg viewBox="0 0 600 240" role="img">
+                  <defs><linearGradient id="area" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#1d72ff" stop-opacity=".25" /><stop offset="1" stop-color="#1d72ff" stop-opacity="0" /></linearGradient></defs>
+                  <path class="chart-area" d="M18 188 L72 136 L126 108 L180 118 L234 82 L288 154 L342 144 L396 112 L450 150 L504 104 L580 86 L580 218 L18 218 Z"></path>
+                  <path class="chart-line" d="M18 188 L72 136 L126 108 L180 118 L234 82 L288 154 L342 144 L396 112 L450 150 L504 104 L580 86"></path>
+                  <g class="chart-dots"><circle cx="234" cy="82" r="7"></circle><circle cx="580" cy="86" r="7"></circle></g>
+                </svg>
+              </div>
+            </article>
+            <article class="panel">
+              <div class="panel-title"><div><h2>Produtos mais vendidos</h2><span>Top 5 por receita</span></div></div>
+              <ol class="rank-list" id="topProducts"></ol>
+            </article>
           </div>
-        </article>
-        <article data-reveal>
-          <span class="card-icon card-price" aria-hidden="true">$</span>
-          <div>
-            <h2>Pre&ccedil;o Acess&iacute;vel</h2>
-            <p>Entretenimento de qualidade por um valor que cabe no seu bolso</p>
+
+          <div class="insight-grid">
+            <article class="insight-card"><span class="status-icon info"></span><div><strong>Estoque em valor</strong><b>R$ 28.430,00</b></div></article>
+            <article class="insight-card"><span class="status-icon warning"></span><div><strong>Produtos em risco</strong><b>12</b><small>3 a menos que ontem</small></div></article>
+            <article class="insight-card"><span class="status-icon danger"></span><div><strong>Produtos parados</strong><b>45</b><small>5 a mais que ontem</small></div></article>
           </div>
-        </article>
-      </section>
-    </main>
+        </section>
+
+        <section class="page" id="assistant" data-page="assistant">
+          <div class="assistant-layout">
+            <aside class="conversation-panel">
+              <div class="page-heading mini-heading"><h1>Conversas</h1><button class="primary-button small-button" type="button" id="newChatButton">Nova conversa</button></div>
+              <button class="conversation-item is-active" type="button"><strong>Faturamento do periodo</strong><span>Hoje, 10:24</span></button>
+              <button class="conversation-item" type="button"><strong>Produtos em risco</strong><span>Ontem, 16:20</span></button>
+            </aside>
+            <article class="panel chat-panel">
+              <div class="assistant-head"><span class="assistant-avatar">AI</span><div><h1>Assistente Vendix</h1><p>Faca perguntas sobre os dados importados. As respostas usam apenas indicadores calculados.</p></div></div>
+              <div class="chat-messages" id="chatMessages">
+                <div class="message user-message">Quanto foi o meu faturamento em 2 dias e meio?</div>
+                <div class="message bot-message"><p>Para calcular 2 dias e meio, preciso saber a partir de qual data voce quer considerar o periodo.</p><div class="calc-box"><strong>Como calculei</strong><span>Periodo pendente de confirmacao. Nenhum numero foi calculado.</span></div></div>
+              </div>
+              <div class="quick-prompts"><button type="button">Ultimos 2,5 dias ate agora</button><button type="button">Produto mais vendido</button><button type="button">Valor parado no estoque</button></div>
+              <form class="chat-form" id="chatForm"><input id="chatInput" maxlength="1000" placeholder="Faca uma pergunta sobre seus dados..." /><button type="submit">Enviar</button></form>
+            </article>
+          </div>
+        </section>
+
+        <section class="page" id="sales" data-page="sales">
+          <div class="page-heading"><div><p class="eyebrow">Vendas</p><h1>Vendas importadas</h1><span>Acompanhe vendas por periodo, categoria e forma de pagamento.</span></div></div>
+          <div class="panel"><div class="table-toolbar"><input class="input" type="search" placeholder="Buscar produto ou venda..." /><select class="input"><option>Todos os pagamentos</option><option>Pix</option><option>Cartao</option></select></div><div class="table-wrap"><table><thead><tr><th>Data</th><th>Produto</th><th>Categoria</th><th>Qtd.</th><th>Total</th><th>Pagamento</th></tr></thead><tbody id="salesTable"></tbody></table></div></div>
+        </section>
+
+        <section class="page" id="products" data-page="products">
+          <div class="page-heading"><div><p class="eyebrow">Produtos e estoque</p><h1>Produtos</h1><span>Controle estoque, vendas e alertas de forma inteligente.</span></div><button class="primary-button" type="button">Novo produto</button></div>
+          <div class="panel"><div class="table-toolbar"><input class="input" id="productSearch" type="search" placeholder="Buscar produto..." /><select class="input" id="categoryFilter"><option value="">Todas as categorias</option></select><select class="input" id="statusFilter"><option value="">Todos os status</option><option>OK</option><option>Atencao</option><option>Sem estoque</option></select></div><div class="table-wrap"><table><thead><tr><th>Produto</th><th>Categoria</th><th>Estoque atual</th><th>Media de vendas</th><th>Dias de estoque</th><th>Status</th></tr></thead><tbody id="productsTable"></tbody></table></div></div>
+        </section>
+
+        <section class="page" id="inventory" data-page="inventory">
+          <div class="page-heading"><div><p class="eyebrow">Estoque</p><h1>Risco e disponibilidade</h1><span>Veja produtos sem estoque, em risco, parados e com excesso.</span></div></div>
+          <div class="inventory-grid"><article class="metric-card"><span>Valor em estoque</span><strong>R$ 28.430,00</strong><small>Base: custo quando disponivel</small></article><article class="metric-card"><span>Sem estoque</span><strong>1</strong><small class="negative">Repor agora</small></article><article class="metric-card"><span>Em risco</span><strong>3</strong><small>Menos de 7 dias</small></article><article class="metric-card"><span>Parados</span><strong>45</strong><small>Sem venda ha 60 dias</small></article></div>
+          <div class="panel"><div class="panel-title"><div><h2>Estimativa de dias de estoque</h2><span>Estoque atual dividido pela venda media diaria</span></div></div><div class="stock-list" id="stockList"></div></div>
+        </section>
+
+        <section class="page" id="alerts" data-page="alerts">
+          <div class="page-heading"><div><p class="eyebrow">Alertas</p><h1>Pontos que precisam de atencao</h1><span>Alertas gerados a partir de vendas e estoque.</span></div></div>
+          <div class="panel"><div class="tabs"><button class="is-active" type="button">Todos</button><button type="button">Estoque</button><button type="button">Vendas</button><button type="button">Recomendacoes</button></div><div class="alert-list" id="alertList"></div></div>
+        </section>
+
+        <section class="page" id="analytics" data-page="analytics">
+          <div class="page-heading"><div><p class="eyebrow">Analises de vendas</p><h1>Desempenho do negocio</h1><span>Entenda categorias, horarios, comparativos e recomendacoes.</span></div></div>
+          <div class="kpi-grid"><article class="metric-card"><span>Margem estimada</span><strong>28,5%</strong><small class="positive">+ 6,2%</small></article><article class="metric-card"><span>Melhor dia</span><strong>14/03</strong><small>R$ 5.420,00</small></article><article class="metric-card"><span>Categoria lider</span><strong>Racoes</strong><small>42% das vendas</small></article><article class="metric-card"><span>Itens vendidos</span><strong>3.612</strong><small class="positive">+ 10,1%</small></article></div>
+          <div class="analytics-grid"><article class="panel"><div class="panel-title"><div><h2>Faturamento por dia</h2><span>Mar/2025</span></div></div><div class="bar-chart" id="barChart"></div></article><article class="panel"><div class="panel-title"><div><h2>Vendas por categoria</h2><span>Participacao</span></div></div><div class="donut-wrap"><div class="donut"></div><ul class="legend" id="categoryLegend"></ul></div></article></div>
+        </section>
+
+        <section class="page" id="imports" data-page="imports">
+          <div class="page-heading"><div><p class="eyebrow">Importacao de dados</p><h1>Enviar planilhas</h1><span>Use CSV, XLS ou XLSX. O sistema valida antes de importar.</span></div></div>
+          <div class="import-grid">
+            <article class="panel upload-panel"><div class="upload-box" id="dropZone"><input id="fileInput" type="file" accept=".csv,.xlsx,.xls" /><span class="upload-symbol"></span><strong>Arraste e solte seu arquivo aqui</strong><span>ou clique para selecionar</span><small>Formatos aceitos: .xlsx, .xls, .csv ate 20MB</small><button class="primary-button" type="button" id="selectFileButton">Selecionar arquivo</button></div><div class="import-status" id="importStatus"><strong>Nenhum arquivo selecionado.</strong><span>Depois do envio, voce vera preview, validacao e relatorio.</span></div></article>
+            <article class="panel"><div class="panel-title"><div><h2>Mapeamento automatico</h2><span>Campos minimos</span></div></div><div class="mapping-grid"><span>Data da venda</span><b>data, dt venda, sale_date</b><span>Produto</span><b>produto, descricao, item</b><span>Quantidade</span><b>qtd, quantidade, qty</b><span>Preco ou total</span><b>preco, valor, total</b></div></article>
+          </div>
+          <div class="panel"><div class="panel-title"><div><h2>Ultimas importacoes</h2></div><button class="text-button" data-page-link="data" type="button">Ver todas</button></div><div class="table-wrap"><table><thead><tr><th>Arquivo</th><th>Data</th><th>Registros</th><th>Produtos</th><th>Periodo</th><th>Status</th></tr></thead><tbody id="importsTable"></tbody></table></div></div>
+        </section>
+
+        <section class="page" id="data" data-page="data">
+          <div class="page-heading"><div><p class="eyebrow">Meus dados</p><h1>Historico de importacoes</h1><span>Audite arquivos, erros, mapeamentos e periodos importados.</span></div></div>
+          <div class="panel"><div class="table-wrap"><table><thead><tr><th>Arquivo</th><th>Importado por</th><th>Registros</th><th>Erros</th><th>Periodo</th><th>Status</th><th></th></tr></thead><tbody id="dataTable"></tbody></table></div></div>
+        </section>
+
+        <section class="page" id="settings" data-page="settings">
+          <div class="page-heading"><div><p class="eyebrow">Configuracoes</p><h1>Perfil, empresa e preferencias</h1><span>Dados principais para o MVP real com Supabase.</span></div></div>
+          <div class="settings-grid">
+            <article class="panel"><div class="panel-title"><div><h2>Dados do usuario</h2><span>Perfil</span></div></div><form class="form-grid"><label>Nome completo<input class="input" value="Joao Silva" /></label><label>E-mail<input class="input" value="joao@exemplo.com" /></label><label>Cargo<input class="input" value="Administrador" /></label></form></article>
+            <article class="panel"><div class="panel-title"><div><h2>Empresa</h2><span>Dados comerciais</span></div></div><form class="form-grid"><label>Nome da empresa<input class="input" value="Pet Shop do Ze" /></label><label>Segmento<input class="input" value="Pet shop" /></label><label>Fuso horario<input class="input" value="America/Sao_Paulo" /></label></form></article>
+            <article class="panel"><div class="panel-title"><div><h2>Recomendacoes</h2><span>Parametros</span></div></div><form class="form-grid two-cols"><label>Horizonte de compra<input class="input" value="15 dias" /></label><label>Estoque de seguranca<input class="input" value="5 dias" /></label></form><div class="soon-box">Integracoes com maquininhas: em breve.</div></article>
+          </div>
+        </section>
+      </main>
+    </div>
 
     <script src="script.js"></script>
   </body>
